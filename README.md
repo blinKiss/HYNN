@@ -1,2 +1,1 @@
-# HYNN
-Machine Learning
+# 시든 꽃에 물을 주듯
