@@ -8,7 +8,7 @@ import pandas as pd
 # ]
 
 # prod_price = pd.DataFrame(price)
-# prod_price = prod_price.T
+# prod_price = prod_price.T # .T = transpose() // 행렬 바꾸기
 
 # label_name = ['Keyboard', 'Mouse', 'Storage']
 
