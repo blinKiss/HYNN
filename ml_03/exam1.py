@@ -7,6 +7,11 @@ font_path = 'C:/Windows/Fonts/gulim.ttc'
 font = font_manager.FontProperties(fname=font_path).get_name()
 rc('font', family=font)
 
+# 7명의 점수 생성
+scores = np.random.randint(0, 100, (7,3))
+scores_str = np.array2string(scores, separator=',')
+# print(scores_str)
+
 # 데이터프레임을 가져와서 성적의 평균 막대그래프를 그리시오
 import oracledb
 
