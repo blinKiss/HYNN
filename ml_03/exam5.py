@@ -21,7 +21,7 @@ df_f_cnt = df_f['Sex'].count()
 # 생존 남성 나이별로 나눔
 df_m_30u = df_m[df_m['Age'] >= 30]['Age'].count()
 df_m_30d = df_m[df_m['Age'] < 30]['Age'].count()
-print(df_m_30u)
+
 # 생존 여성 나이별로 나눔
 df_f_30u = df_f[df_f['Age'] >= 30]['Age'].count()
 df_f_30d = df_f[df_f['Age'] < 30]['Age'].count()
