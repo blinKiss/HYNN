@@ -9,6 +9,8 @@ onBoard = df['Survived'].count()
 df3 = df2[df2['Survived'] == 1]
 survived = df3['Survived'].count()
 
+# 생존자 비율
+per_survive = survived / onBoard
 
 # 생존 인원 중 남성
 df_m = df3[df3['Sex'] == 'male']
@@ -26,11 +28,11 @@ df_m_30d = df_m[df_m['Age'] < 30]['Age'].count()
 df_f_30u = df_f[df_f['Age'] >= 30]['Age'].count()
 df_f_30d = df_f[df_f['Age'] < 30]['Age'].count()
 
-print('남성의 생존 확률 : {}%, 그 중 30세 이상의 생존 확률 : {}%, 30세 미만의 생존 확률 : {}%\n'
+print('생존자 중 남성의 비율 : {}%, 그 중 30세 이상의 생존 확률 : {}%, 30세 미만의 생존 확률 : {}%\n'
       .format(round(df_m_cnt * 100 / survived),
-              round(df_m_30u * 100 / df_m_cnt), 
+              round(df_m_30u * 100 / df_m_cnt),
               round(df_m_30d * 100 / df_m_cnt)))
-print('여성의 생존 확률 : {}%, 그 중 30세 이상의 생존 확률 : {}%, 30세 미만의 생존 확률 : {}%'
-      .format(round(df_f_cnt * 100 / survived),  
-              round(df_f_30u * 100 / df_f_cnt), 
+print('생존자 중 여성의 비율 : {}%, 그 중 30세 이상의 생존 확률 : {}%, 30세 미만의 생존 확률 : {}%'
+      .format(round(df_f_cnt * 100 / survived),
+              round(df_f_30u * 100 / df_f_cnt),
               round(df_f_30d * 100 / df_f_cnt)))
