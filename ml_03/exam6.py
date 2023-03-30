@@ -4,13 +4,13 @@ import pandas as pd
 df = pd.DataFrame({
     'weather': ['sunny', 'sunny', 'sunny', 'overcast', 'rainy', 'rainy', 'sunny', 'overcast', 'rainy', 'rainy'],  # 0,1,2
     # 30, 20, 10
-    'temperature': ['hot', 'cool', 'mild', 'hot', 'mild', 'cool', 'mild', 'hot', 'mild', 'cool'],
+    'temperature': ['hot', 'cool', 'mild', 'hot', 'mild', 'cool', 'hot', 'mild', 'mild', 'cool'],
     # 60, 50, 40
-    'humidity': ['high', 'normal', 'high', 'low', 'high', 'normal', 'high', 'low', 'high', 'normal'],
+    'humidity': ['high', 'normal', 'high', 'high', 'high', 'normal', 'high', 'low', 'high', 'normal'],
     # 0, 1
     'windy': [False, False, True, False, False, False, True, False, True, True],
     # 0, 1
-    'basket_target': ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'no', 'yes', 'no', 'yes']
+    'basket_target': ['no', 'yes', 'yes', 'yes', 'yes', 'no', 'no', 'yes', 'no', 'yes']
 })
 
 # df.insert(loc=1,
